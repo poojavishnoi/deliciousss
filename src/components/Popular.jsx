@@ -39,7 +39,7 @@ function Popular() {
             <Card>
             <Link to={"/recipe/" + recipe.id}>
               <p>{recipe.title}</p>
-              <img src={recipe.image} />
+              <img src={recipe.image} alt="" />
               <Gradient/>
             </Link>
             </Card>
