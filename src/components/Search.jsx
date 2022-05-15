@@ -26,6 +26,10 @@ function Search() {
 const FormStyle = styled.form`
   margin: 0 20rem;
   position: relative;
+  @media only screen and (max-width: 600px) {
+    margin: 1rem;
+    font-size: 0.7rem
+  }
  
   input{
     border:none;
@@ -36,6 +40,9 @@ const FormStyle = styled.form`
     border-radius: 1rem;
     outline: none;
     width:100%;
+    @media only screen and (max-width: 600px) {
+      width: 95%;
+    }
     padding-left:4rem
   }
 

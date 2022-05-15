@@ -32,9 +32,13 @@ function Veggie() {
 
 
   return (
-    <div><Wrapper>
+    <div className="veggie"><Wrapper>
     <h3>Vegetarian Picks</h3>
-    <Splide options={{perPage:3, autoplay:true, rewind: true, arrows:true, pagination: false, drag:'free'}}>
+    <Splide options={{perPage:3, autoplay:true, rewind: true, arrows:true, pagination: false, drag:'free',breakpoints:{
+              700: {
+                destroy:true
+              }
+            }}}>
     {veggie.map((recipe) => {
       return (
         <SplideSlide>

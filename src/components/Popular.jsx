@@ -29,10 +29,13 @@ function Popular() {
   };
 
   return (
-    <div>
+    <div className="popular">
       <Wrapper>
         <h3>Popular Picks</h3>
-        <Splide options={{perPage:4, autoplay:true, rewind: true, arrows:true, pagination: false, drag:'free'}}>
+        <Splide options={{perPage:4, autoplay:true, rewind: true, arrows:true, pagination: false, drag:'free',breakpoints:{
+              700: {
+                destroy:true
+              }}}}>
         {popular.map((recipe) => {
           return (
             <SplideSlide>

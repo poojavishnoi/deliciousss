@@ -21,7 +21,7 @@ function Searched() {
   }, [params.search])
 
   return (
-    <Grid>
+    <Grid className='grid'>
       {searcedRecipes.map((item)=>{
         return(
           <Card key={item.id}>
@@ -41,11 +41,17 @@ const Grid = styled.div`
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem; 
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+  }
 `
 
 const Card = styled.div`
   img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 2rem
   }
 

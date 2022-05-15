@@ -65,9 +65,13 @@ function Recipe() {
 const DetailWrapper = styled.div`
   margin: 10rem 0 5rem 0;
   display:flex;
-
+  
   img{
     border-radius: 2rem;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem
   }
 
   h2{
@@ -87,6 +91,21 @@ const DetailWrapper = styled.div`
     background: linear-gradient(to right, #f27121, #e94057);
     color:white;
   }
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+    margin: 1rem;
+    h3{
+      font-size: 0.7rem
+    }
+    li{
+      font-size: 0.7rem
+    }
+    h2{
+      font-size: 1rem
+    }
+    
+  }
 `
 
 const Button = styled.button`
@@ -104,6 +123,11 @@ const Button = styled.button`
 const Info = styled.div`
   margin-left:10rem;
   line-height: 2rem;
+  @media only screen and (max-width: 600px) {
+    margin-left: 0;
+
+
+  }
 `
 
 export default Recipe

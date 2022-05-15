@@ -1,3 +1,22 @@
 .App{
   margin: 1% 20%;
+  
+}
+
+.home{
+  width: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .App{
+    font-size: 0.4rem;
+    margin: 0;
+    width: 25rem;
+  }
+
+  .grid{
+    display: block;
+  }
 }

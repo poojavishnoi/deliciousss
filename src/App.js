@@ -36,6 +36,10 @@ const Nav = styled.div`
   justify-content: flex-start;
   align-items: center;
 
+  @media only screen and (max-width: 600px) {
+    padding: 1rem 0;
+  }
+
   svg{
     font-size: 2rem
   }
