@@ -21,7 +21,7 @@ function Recipe() {
 
   return (
     <DetailWrapper>
-      <div>
+      <div className='title_img'>
       <h2>{details.title}</h2>
         <img src={details.image} alt=''/>
       </div>
@@ -68,7 +68,7 @@ const DetailWrapper = styled.div`
   
   img{
     border-radius: 2rem;
-    width:100%;
+    width: 8rem
     height: 100%;
     object-fit: cover;
     margin-bottom: 1rem
@@ -95,6 +95,11 @@ const DetailWrapper = styled.div`
   @media only screen and (max-width: 600px) {
     display: block;
     margin: 1rem;
+
+    img{
+      width: 22.5rem
+    }
+
     h3{
       font-size: 0.7rem
     }
